@@ -1,0 +1,175 @@
+.content { float:left; width:92%; margin:0 4%; padding: 20px 0; }
+
+/*HEADER*/
+.main_header          { background:#ffffff; border-bottom:1px #f4f4f4 solid; z-index:1; padding: 0.5em 0em; }
+.main_header .content { float:left; padding:0px 0; }
+
+.fixed            { display:block; position:fixed; z-index:9;  }
+.main_header_logo { text-align:center; margin:auto; float:none; width:138px; }
+.main_header_logo img { height:69px; }
+
+/*Seu Código*/
+.section-seu-codigo          { padding:10px 0px; background-color:#f4f4f4; }
+.section-seu-codigo .content { float:left; padding:1em 0; }
+.section_title               { width: 100%; float:left; margin-bottom:1em; font-size:1.3em; font-weight: 300; text-align: center; border-bottom: 1px #eceaea solid; padding-bottom: 1em; }
+
+.box-artigo   { width:100%; float:left; background:#fff; box-shadow: 1px 0px 1.2px 0px #e3e3e3; border-radius:3px; padding:1em; }
+
+/*Hoverlay Degradê*/
+.hoverlay-degrade {
+
+  width: 100%;
+  margin-bottom:25px; 
+  position: relative;
+  float: left;
+  overflow: hidden;
+  border-radius:8px;
+  background: #700877;
+  background: -moz-linear-gradient(90deg, #700877 0%, #ff2759 100%, #ff2759 100%);
+  background: -webkit-linear-gradient(90deg, #700877 0%, #ff2759 100%, #ff2759 100%);
+  background: linear-gradient(90deg, #700877 0%, #ff2759 100%, #ff2759 100%);
+
+}
+
+.hoverlay-degrade img,
+.hoverlay-degrade:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.hoverlay-degrade img {
+  width: 100%;
+  backface-visibility: hidden;
+  vertical-align: top;
+}
+
+.hoverlay-degrade:after {
+  
+  content: '';
+  background-color: #fff;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+}
+
+.hoverlay-degrade:after {
+
+    height:1px;
+    width:0px;
+    top: 60%;
+
+}
+
+.hoverlay-degrade a {
+
+    position: absolute;
+    top: 47%;
+    bottom: 0;
+    left: 42%;
+    right: 0;
+    z-index: 1;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.8em;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    line-height: 53px;
+    opacity:0;
+
+}
+
+.hoverlay-degrade:hover a { top:40%; opacity:1; }
+
+.hoverlay-degrade:hover img {
+  zoom: 1;
+  filter: alpha(opacity=50);
+  -webkit-opacity: 0.5;
+  opacity: 0.5;
+}
+
+.hoverlay-degrade:hover:after {
+
+  opacity: 1;
+  width:12% ;
+
+}
+/*Hoverlay Degradê*/
+
+/*FOOTER*/
+.main_footer          { background-color:#353535; color:#fff; font-size:0.875em; }
+.main_footer .content { padding:3em 0em; }
+
+.main_footer_copy       { background-color:#70d6cb; width:100%; float:left; text-align:center; padding:1.5em 0em;}
+.main_footer_copy p     { font-family:'open_sanslight'; font-size:2em; color:#0c0c0c; height:30px; }
+.main_footer_copy .m-b-footer   { margin-bottom:0.5em; }
+.main_footer_copy .by   { font-size:0.96em; }
+.main_footer_copy .by i { font-size:0.96em; margin-right:3px; color:#e82626; }
+
+
+/*Começa o Responsivo*/
+
+/*480PX BREAKPOINT*/
+/*480 dividido por 16 = 30em*/
+@media (min-width:30em){
+
+.boxBannerTopo { padding:1em 0; }
+
+}
+
+/*600PX BREAKPOINT*/
+/*600 dividido por 16 = 37,5em*/
+@media (min-width:37em){
+
+
+} 
+
+/*768PX BREAKPOINT*/
+/*768 dividido por 16 = 48em*/
+@media (min-width:48em){
+
+.hoverlay-degrade { width:31.3%; margin-right:3%; margin-bottom:0; }
+.hoverlay-degrade:nth-of-type(3n+0) {margin-right:0;}
+
+} 
+
+/*960PX BREAKPOINT*/
+/*960 dividido por 16 = 60em*/
+@media (min-width:60em){
+
+ .section-seu-codigo          { padding:20px 0px; }
+ .section-seu-codigo .content { width:80%; padding:1em 0; margin:0 10%; }
+
+}
+
+/*1280PX BREAKPOINT*/
+/*1280 dividido por 16 = 80em*/
+@media (min-width:80em){
+
+ 
+}
+
+/*1366PX BREAKPOINT*/
+/*1366 dividido por 16 = 85,375em*/
+@media (min-width:85em){
+
+ .content  { width:80%; margin:0 10%; }
+
+}
+
+/*1600PX BREAKPOINT*/
+/*1600 dividido por 16 = 100em*/
+@media (min-width:100em){
+
+
+}
+/*Fecha o Responsivo*/
